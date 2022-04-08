@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4744FD7B279CB7DC004CEBDA /* SearchHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4744FD7A279CB7DB004CEBDA /* SearchHistoryCell.swift */; };
+		4744FD7F279CBAC8004CEBDA /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4744FD7D279CBAC8004CEBDA /* CoreDataHelper.swift */; };
+		4744FD80279CBAC8004CEBDA /* CFDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4744FD7E279CBAC8004CEBDA /* CFDBHelper.swift */; };
+		47566E8F279CBDCE005ED923 /* SFDBWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47566E8E279CBDCE005ED923 /* SFDBWorker.swift */; };
+		47566E91279CFA7B005ED923 /* SearchPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47566E90279CFA7B005ED923 /* SearchPresenterMock.swift */; };
+		47566E93279CFA89005ED923 /* SearchInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47566E92279CFA89005ED923 /* SearchInteractorMock.swift */; };
+		47566E95279CFA98005ED923 /* SearchViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47566E94279CFA98005ED923 /* SearchViewMock.swift */; };
+		47566E97279CFAAB005ED923 /* SearchWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47566E96279CFAAB005ED923 /* SearchWorkerMock.swift */; };
+		47566E99279CFABF005ED923 /* SearchDBWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47566E98279CFABF005ED923 /* SearchDBWorkerMock.swift */; };
+		47566E9B279D0505005ED923 /* SearchNetworkingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47566E9A279D0505005ED923 /* SearchNetworkingMock.swift */; };
+		47FF1CF8279C641000384388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1CF7279C641000384388 /* AppDelegate.swift */; };
+		47FF1CFA279C641000384388 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1CF9279C641000384388 /* SceneDelegate.swift */; };
+		47FF1CFC279C641000384388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1CFB279C641000384388 /* ViewController.swift */; };
+		47FF1CFF279C641000384388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FF1CFD279C641000384388 /* Main.storyboard */; };
+		47FF1D02279C641000384388 /* SAPFLICKER.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D00279C641000384388 /* SAPFLICKER.xcdatamodeld */; };
+		47FF1D04279C641500384388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FF1D03279C641500384388 /* Assets.xcassets */; };
+		47FF1D07279C641500384388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FF1D05279C641500384388 /* LaunchScreen.storyboard */; };
+		47FF1D12279C641500384388 /* SAPFLICKERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D11279C641500384388 /* SAPFLICKERTests.swift */; };
+		47FF1D1C279C641500384388 /* SAPFLICKERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D1B279C641500384388 /* SAPFLICKERUITests.swift */; };
+		47FF1D1E279C641500384388 /* SAPFLICKERUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D1D279C641500384388 /* SAPFLICKERUITestsLaunchTests.swift */; };
+		47FF1D4F279C66F600384388 /* SFUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D3A279C66F500384388 /* SFUtilities.swift */; };
+		47FF1D50279C66F600384388 /* SFCommonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D3B279C66F500384388 /* SFCommonExtensions.swift */; };
+		47FF1D51279C66F600384388 /* SFConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D3D279C66F500384388 /* SFConstants.swift */; };
+		47FF1D52279C66F600384388 /* SFAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D3F279C66F500384388 /* SFAPICall.swift */; };
+		47FF1D53279C66F600384388 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D40279C66F500384388 /* Reachability.swift */; };
+		47FF1D54279C66F600384388 /* SFNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D41279C66F500384388 /* SFNetworkingManager.swift */; };
+		47FF1D55279C66F600384388 /* SFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D43279C66F500384388 /* SFError.swift */; };
+		47FF1D56279C66F600384388 /* SFDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D45279C66F600384388 /* SFDIContainer.swift */; };
+		47FF1D57279C66F600384388 /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 47FF1D47279C66F600384388 /* Mock.json */; };
+		47FF1D66279C68FF00384388 /* SFPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D5A279C68FF00384388 /* SFPresenter.swift */; };
+		47FF1D67279C68FF00384388 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D5C279C68FF00384388 /* SearchView.swift */; };
+		47FF1D69279C68FF00384388 /* SFAPIWorker+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D61279C68FF00384388 /* SFAPIWorker+Networking.swift */; };
+		47FF1D6A279C68FF00384388 /* SFAPIRepoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D62279C68FF00384388 /* SFAPIRepoWorker.swift */; };
+		47FF1D6B279C68FF00384388 /* SFInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D63279C68FF00384388 /* SFInteractor.swift */; };
+		47FF1D6C279C68FF00384388 /* SFDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D65279C68FF00384388 /* SFDataModel.swift */; };
+		47FF1D6F279C6A1800384388 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 47FF1D6E279C6A1800384388 /* SDWebImage */; };
+		47FF1D71279C8C4400384388 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF1D70279C8C4400384388 /* ImageCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47FF1D0E279C641500384388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47FF1CEC279C641000384388 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47FF1CF3279C641000384388;
+			remoteInfo = SAPFLICKER;
+		};
+		47FF1D18279C641500384388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47FF1CEC279C641000384388 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47FF1CF3279C641000384388;
+			remoteInfo = SAPFLICKER;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4744FD7A279CB7DB004CEBDA /* SearchHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryCell.swift; sourceTree = "<group>"; };
+		4744FD7D279CBAC8004CEBDA /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		4744FD7E279CBAC8004CEBDA /* CFDBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFDBHelper.swift; sourceTree = "<group>"; };
+		47566E8E279CBDCE005ED923 /* SFDBWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDBWorker.swift; sourceTree = "<group>"; };
+		47566E90279CFA7B005ED923 /* SearchPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenterMock.swift; sourceTree = "<group>"; };
+		47566E92279CFA89005ED923 /* SearchInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractorMock.swift; sourceTree = "<group>"; };
+		47566E94279CFA98005ED923 /* SearchViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewMock.swift; sourceTree = "<group>"; };
+		47566E96279CFAAB005ED923 /* SearchWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWorkerMock.swift; sourceTree = "<group>"; };
+		47566E98279CFABF005ED923 /* SearchDBWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDBWorkerMock.swift; sourceTree = "<group>"; };
+		47566E9A279D0505005ED923 /* SearchNetworkingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkingMock.swift; sourceTree = "<group>"; };
+		47FF1CF4279C641000384388 /* SAPFLICKER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAPFLICKER.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47FF1CF7279C641000384388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47FF1CF9279C641000384388 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		47FF1CFB279C641000384388 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47FF1CFE279C641000384388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47FF1D01279C641000384388 /* SAPFLICKER.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SAPFLICKER.xcdatamodel; sourceTree = "<group>"; };
+		47FF1D03279C641500384388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47FF1D06279C641500384388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47FF1D08279C641500384388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47FF1D0D279C641500384388 /* SAPFLICKERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAPFLICKERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47FF1D11279C641500384388 /* SAPFLICKERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAPFLICKERTests.swift; sourceTree = "<group>"; };
+		47FF1D17279C641500384388 /* SAPFLICKERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAPFLICKERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47FF1D1B279C641500384388 /* SAPFLICKERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAPFLICKERUITests.swift; sourceTree = "<group>"; };
+		47FF1D1D279C641500384388 /* SAPFLICKERUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAPFLICKERUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		47FF1D3A279C66F500384388 /* SFUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFUtilities.swift; sourceTree = "<group>"; };
+		47FF1D3B279C66F500384388 /* SFCommonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCommonExtensions.swift; sourceTree = "<group>"; };
+		47FF1D3D279C66F500384388 /* SFConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFConstants.swift; sourceTree = "<group>"; };
+		47FF1D3F279C66F500384388 /* SFAPICall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAPICall.swift; sourceTree = "<group>"; };
+		47FF1D40279C66F500384388 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		47FF1D41279C66F500384388 /* SFNetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNetworkingManager.swift; sourceTree = "<group>"; };
+		47FF1D43279C66F500384388 /* SFError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFError.swift; sourceTree = "<group>"; };
+		47FF1D45279C66F600384388 /* SFDIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDIContainer.swift; sourceTree = "<group>"; };
+		47FF1D47279C66F600384388 /* Mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mock.json; sourceTree = "<group>"; };
+		47FF1D5A279C68FF00384388 /* SFPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPresenter.swift; sourceTree = "<group>"; };
+		47FF1D5C279C68FF00384388 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		47FF1D61279C68FF00384388 /* SFAPIWorker+Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFAPIWorker+Networking.swift"; sourceTree = "<group>"; };
+		47FF1D62279C68FF00384388 /* SFAPIRepoWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAPIRepoWorker.swift; sourceTree = "<group>"; };
+		47FF1D63279C68FF00384388 /* SFInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFInteractor.swift; sourceTree = "<group>"; };
+		47FF1D65279C68FF00384388 /* SFDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDataModel.swift; sourceTree = "<group>"; };
+		47FF1D70279C8C4400384388 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47FF1CF1279C641000384388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FF1D6F279C6A1800384388 /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FF1D0A279C641500384388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FF1D14279C641500384388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4744FD7C279CBAC8004CEBDA /* DBHandler */ = {
+			isa = PBXGroup;
+			children = (
+				4744FD7D279CBAC8004CEBDA /* CoreDataHelper.swift */,
+				4744FD7E279CBAC8004CEBDA /* CFDBHelper.swift */,
+			);
+			path = DBHandler;
+			sourceTree = "<group>";
+		};
+		47FF1CEB279C641000384388 = {
+			isa = PBXGroup;
+			children = (
+				47FF1CF6279C641000384388 /* SAPFLICKER */,
+				47FF1D10279C641500384388 /* SAPFLICKERTests */,
+				47FF1D1A279C641500384388 /* SAPFLICKERUITests */,
+				47FF1CF5279C641000384388 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47FF1CF5279C641000384388 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1CF4279C641000384388 /* SAPFLICKER.app */,
+				47FF1D0D279C641500384388 /* SAPFLICKERTests.xctest */,
+				47FF1D17279C641500384388 /* SAPFLICKERUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47FF1CF6279C641000384388 /* SAPFLICKER */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1CF7279C641000384388 /* AppDelegate.swift */,
+				47FF1CF9279C641000384388 /* SceneDelegate.swift */,
+				47FF1CFB279C641000384388 /* ViewController.swift */,
+				47FF1CFD279C641000384388 /* Main.storyboard */,
+				47FF1D03279C641500384388 /* Assets.xcassets */,
+				47FF1D05279C641500384388 /* LaunchScreen.storyboard */,
+				47FF1D08279C641500384388 /* Info.plist */,
+				47FF1D00279C641000384388 /* SAPFLICKER.xcdatamodeld */,
+				4744FD7C279CBAC8004CEBDA /* DBHandler */,
+				47FF1D44279C66F600384388 /* DIContainer */,
+				47FF1D42279C66F500384388 /* Error */,
+				47FF1D3C279C66F500384388 /* Macros */,
+				47FF1D3E279C66F500384388 /* Networking */,
+				47FF1D46279C66F600384388 /* Resources */,
+				47FF1D2A279C66F500384388 /* Scenes */,
+				47FF1D39279C66F500384388 /* Utilities */,
+			);
+			path = SAPFLICKER;
+			sourceTree = "<group>";
+		};
+		47FF1D10279C641500384388 /* SAPFLICKERTests */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D11279C641500384388 /* SAPFLICKERTests.swift */,
+				47566E90279CFA7B005ED923 /* SearchPresenterMock.swift */,
+				47566E92279CFA89005ED923 /* SearchInteractorMock.swift */,
+				47566E94279CFA98005ED923 /* SearchViewMock.swift */,
+				47566E96279CFAAB005ED923 /* SearchWorkerMock.swift */,
+				47566E9A279D0505005ED923 /* SearchNetworkingMock.swift */,
+				47566E98279CFABF005ED923 /* SearchDBWorkerMock.swift */,
+			);
+			path = SAPFLICKERTests;
+			sourceTree = "<group>";
+		};
+		47FF1D1A279C641500384388 /* SAPFLICKERUITests */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D1B279C641500384388 /* SAPFLICKERUITests.swift */,
+				47FF1D1D279C641500384388 /* SAPFLICKERUITestsLaunchTests.swift */,
+			);
+			path = SAPFLICKERUITests;
+			sourceTree = "<group>";
+		};
+		47FF1D2A279C66F500384388 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D58279C68FF00384388 /* Search Scene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		47FF1D39279C66F500384388 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D3A279C66F500384388 /* SFUtilities.swift */,
+				47FF1D3B279C66F500384388 /* SFCommonExtensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		47FF1D3C279C66F500384388 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D3D279C66F500384388 /* SFConstants.swift */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		47FF1D3E279C66F500384388 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D3F279C66F500384388 /* SFAPICall.swift */,
+				47FF1D40279C66F500384388 /* Reachability.swift */,
+				47FF1D41279C66F500384388 /* SFNetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		47FF1D42279C66F500384388 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D43279C66F500384388 /* SFError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		47FF1D44279C66F600384388 /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D45279C66F600384388 /* SFDIContainer.swift */,
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		47FF1D46279C66F600384388 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D47279C66F600384388 /* Mock.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		47FF1D58279C68FF00384388 /* Search Scene */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D59279C68FF00384388 /* SearchPresenter */,
+				47FF1D5B279C68FF00384388 /* SearchView */,
+				47FF1D5F279C68FF00384388 /* SearchInteractor */,
+				47FF1D64279C68FF00384388 /* SearchEntity */,
+			);
+			path = "Search Scene";
+			sourceTree = "<group>";
+		};
+		47FF1D59279C68FF00384388 /* SearchPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D5A279C68FF00384388 /* SFPresenter.swift */,
+			);
+			path = SearchPresenter;
+			sourceTree = "<group>";
+		};
+		47FF1D5B279C68FF00384388 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D5C279C68FF00384388 /* SearchView.swift */,
+				47FF1D5D279C68FF00384388 /* HelperViews */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		47FF1D5D279C68FF00384388 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D70279C8C4400384388 /* ImageCollectionViewCell.swift */,
+				4744FD7A279CB7DB004CEBDA /* SearchHistoryCell.swift */,
+			);
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		47FF1D5F279C68FF00384388 /* SearchInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D60279C68FF00384388 /* SearchWorker */,
+				47FF1D63279C68FF00384388 /* SFInteractor.swift */,
+			);
+			path = SearchInteractor;
+			sourceTree = "<group>";
+		};
+		47FF1D60279C68FF00384388 /* SearchWorker */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D61279C68FF00384388 /* SFAPIWorker+Networking.swift */,
+				47FF1D62279C68FF00384388 /* SFAPIRepoWorker.swift */,
+				47566E8E279CBDCE005ED923 /* SFDBWorker.swift */,
+			);
+			path = SearchWorker;
+			sourceTree = "<group>";
+		};
+		47FF1D64279C68FF00384388 /* SearchEntity */ = {
+			isa = PBXGroup;
+			children = (
+				47FF1D65279C68FF00384388 /* SFDataModel.swift */,
+			);
+			path = SearchEntity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47FF1CF3279C641000384388 /* SAPFLICKER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47FF1D21279C641500384388 /* Build configuration list for PBXNativeTarget "SAPFLICKER" */;
+			buildPhases = (
+				47FF1CF0279C641000384388 /* Sources */,
+				47FF1CF1279C641000384388 /* Frameworks */,
+				47FF1CF2279C641000384388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAPFLICKER;
+			packageProductDependencies = (
+				47FF1D6E279C6A1800384388 /* SDWebImage */,
+			);
+			productName = SAPFLICKER;
+			productReference = 47FF1CF4279C641000384388 /* SAPFLICKER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47FF1D0C279C641500384388 /* SAPFLICKERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47FF1D24279C641500384388 /* Build configuration list for PBXNativeTarget "SAPFLICKERTests" */;
+			buildPhases = (
+				47FF1D09279C641500384388 /* Sources */,
+				47FF1D0A279C641500384388 /* Frameworks */,
+				47FF1D0B279C641500384388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47FF1D0F279C641500384388 /* PBXTargetDependency */,
+			);
+			name = SAPFLICKERTests;
+			productName = SAPFLICKERTests;
+			productReference = 47FF1D0D279C641500384388 /* SAPFLICKERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		47FF1D16279C641500384388 /* SAPFLICKERUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47FF1D27279C641500384388 /* Build configuration list for PBXNativeTarget "SAPFLICKERUITests" */;
+			buildPhases = (
+				47FF1D13279C641500384388 /* Sources */,
+				47FF1D14279C641500384388 /* Frameworks */,
+				47FF1D15279C641500384388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47FF1D19279C641500384388 /* PBXTargetDependency */,
+			);
+			name = SAPFLICKERUITests;
+			productName = SAPFLICKERUITests;
+			productReference = 47FF1D17279C641500384388 /* SAPFLICKERUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47FF1CEC279C641000384388 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					47FF1CF3279C641000384388 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					47FF1D0C279C641500384388 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 47FF1CF3279C641000384388;
+					};
+					47FF1D16279C641500384388 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 47FF1CF3279C641000384388;
+					};
+				};
+			};
+			buildConfigurationList = 47FF1CEF279C641000384388 /* Build configuration list for PBXProject "SAPFLICKER" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47FF1CEB279C641000384388;
+			packageReferences = (
+				47FF1D6D279C6A1800384388 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = 47FF1CF5279C641000384388 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47FF1CF3279C641000384388 /* SAPFLICKER */,
+				47FF1D0C279C641500384388 /* SAPFLICKERTests */,
+				47FF1D16279C641500384388 /* SAPFLICKERUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47FF1CF2279C641000384388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FF1D07279C641500384388 /* LaunchScreen.storyboard in Resources */,
+				47FF1D04279C641500384388 /* Assets.xcassets in Resources */,
+				47FF1CFF279C641000384388 /* Main.storyboard in Resources */,
+				47FF1D57279C66F600384388 /* Mock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FF1D0B279C641500384388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FF1D15279C641500384388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47FF1CF0279C641000384388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FF1D50279C66F600384388 /* SFCommonExtensions.swift in Sources */,
+				47FF1CFC279C641000384388 /* ViewController.swift in Sources */,
+				4744FD7B279CB7DC004CEBDA /* SearchHistoryCell.swift in Sources */,
+				4744FD7F279CBAC8004CEBDA /* CoreDataHelper.swift in Sources */,
+				47FF1D54279C66F600384388 /* SFNetworkingManager.swift in Sources */,
+				47FF1CF8279C641000384388 /* AppDelegate.swift in Sources */,
+				47FF1D52279C66F600384388 /* SFAPICall.swift in Sources */,
+				47FF1D66279C68FF00384388 /* SFPresenter.swift in Sources */,
+				47FF1CFA279C641000384388 /* SceneDelegate.swift in Sources */,
+				47FF1D4F279C66F600384388 /* SFUtilities.swift in Sources */,
+				47FF1D6C279C68FF00384388 /* SFDataModel.swift in Sources */,
+				47FF1D56279C66F600384388 /* SFDIContainer.swift in Sources */,
+				4744FD80279CBAC8004CEBDA /* CFDBHelper.swift in Sources */,
+				47FF1D55279C66F600384388 /* SFError.swift in Sources */,
+				47FF1D67279C68FF00384388 /* SearchView.swift in Sources */,
+				47FF1D69279C68FF00384388 /* SFAPIWorker+Networking.swift in Sources */,
+				47FF1D02279C641000384388 /* SAPFLICKER.xcdatamodeld in Sources */,
+				47FF1D6B279C68FF00384388 /* SFInteractor.swift in Sources */,
+				47FF1D53279C66F600384388 /* Reachability.swift in Sources */,
+				47FF1D51279C66F600384388 /* SFConstants.swift in Sources */,
+				47FF1D6A279C68FF00384388 /* SFAPIRepoWorker.swift in Sources */,
+				47FF1D71279C8C4400384388 /* ImageCollectionViewCell.swift in Sources */,
+				47566E8F279CBDCE005ED923 /* SFDBWorker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FF1D09279C641500384388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47566E91279CFA7B005ED923 /* SearchPresenterMock.swift in Sources */,
+				47566E9B279D0505005ED923 /* SearchNetworkingMock.swift in Sources */,
+				47566E93279CFA89005ED923 /* SearchInteractorMock.swift in Sources */,
+				47566E97279CFAAB005ED923 /* SearchWorkerMock.swift in Sources */,
+				47566E99279CFABF005ED923 /* SearchDBWorkerMock.swift in Sources */,
+				47566E95279CFA98005ED923 /* SearchViewMock.swift in Sources */,
+				47FF1D12279C641500384388 /* SAPFLICKERTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FF1D13279C641500384388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FF1D1E279C641500384388 /* SAPFLICKERUITestsLaunchTests.swift in Sources */,
+				47FF1D1C279C641500384388 /* SAPFLICKERUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47FF1D0F279C641500384388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47FF1CF3279C641000384388 /* SAPFLICKER */;
+			targetProxy = 47FF1D0E279C641500384388 /* PBXContainerItemProxy */;
+		};
+		47FF1D19279C641500384388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47FF1CF3279C641000384388 /* SAPFLICKER */;
+			targetProxy = 47FF1D18279C641500384388 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47FF1CFD279C641000384388 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47FF1CFE279C641000384388 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47FF1D05279C641500384388 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47FF1D06279C641500384388 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47FF1D1F279C641500384388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		47FF1D20279C641500384388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47FF1D22279C641500384388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YTAW46B5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SAPFLICKER/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SAPFLICKER.ios.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		47FF1D23279C641500384388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YTAW46B5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SAPFLICKER/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SAPFLICKER.ios.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		47FF1D25279C641500384388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YTAW46B5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SAPFLICKERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAPFLICKER.app/SAPFLICKER";
+			};
+			name = Debug;
+		};
+		47FF1D26279C641500384388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YTAW46B5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SAPFLICKERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAPFLICKER.app/SAPFLICKER";
+			};
+			name = Release;
+		};
+		47FF1D28279C641500384388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YTAW46B5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SAPFLICKERUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SAPFLICKER;
+			};
+			name = Debug;
+		};
+		47FF1D29279C641500384388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YTAW46B5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SAPFLICKERUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SAPFLICKER;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47FF1CEF279C641000384388 /* Build configuration list for PBXProject "SAPFLICKER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47FF1D1F279C641500384388 /* Debug */,
+				47FF1D20279C641500384388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47FF1D21279C641500384388 /* Build configuration list for PBXNativeTarget "SAPFLICKER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47FF1D22279C641500384388 /* Debug */,
+				47FF1D23279C641500384388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47FF1D24279C641500384388 /* Build configuration list for PBXNativeTarget "SAPFLICKERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47FF1D25279C641500384388 /* Debug */,
+				47FF1D26279C641500384388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47FF1D27279C641500384388 /* Build configuration list for PBXNativeTarget "SAPFLICKERUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47FF1D28279C641500384388 /* Debug */,
+				47FF1D29279C641500384388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47FF1D6D279C6A1800384388 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47FF1D6E279C6A1800384388 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47FF1D6D279C6A1800384388 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		47FF1D00279C641000384388 /* SAPFLICKER.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				47FF1D01279C641000384388 /* SAPFLICKER.xcdatamodel */,
+			);
+			currentVersion = 47FF1D01279C641000384388 /* SAPFLICKER.xcdatamodel */;
+			path = SAPFLICKER.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 47FF1CEC279C641000384388 /* Project object */;
+}
